@@ -34,3 +34,20 @@ print(randomize_password)
 # randomized_string = randomize_string("Hello, World!")
 # print(randomized_string)
 #Kalau pakai fungsi
+
+#Cara lain kalau nilainya dimasukin dlu ke list
+# password_list = []
+
+# for letter in range(0,nr_letters):
+#   password_list.append(letters[random.randint(0,51)])
+# for symbol in range(0,nr_symbols):
+#   password_list.append(symbols[random.randint(0,8)])
+# for number in range(0,nr_numbers):
+#   password_list.append(numbers[random.randint(0,9)])
+
+# random.shuffle(password_list)
+
+# password=""
+# for i in range (0, len(password_list)):
+#   password += password_list[i]
+# print(f"Your password is: {password}")
