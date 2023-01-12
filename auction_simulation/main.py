@@ -7,13 +7,15 @@ end_of_bid = False
 bidders = {}
 
 def find_highest_bidders(bidders):
-  b = 0
+  winner =""
+  highest_bid = 0
   for key in bidders:
-    if bidders[key] > b:
-      a = key
-      b = bidders[key]
+    bid_amount = bidders[key]
+    if bid_amount > highest_bid:
+      winner = key
+      highest_bid = bid_amount
   
-  print(f"The winner is {a} with a bid of ${b}")
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
     
 while not end_of_bid:
   name = input("What's your name: ")
