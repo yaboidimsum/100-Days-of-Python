@@ -38,9 +38,9 @@ def game():
     while statement_a == statement_b:
       statement_b = random_data
 
-    print(format_data(statement_a))
+    print(f"Compare A: {format_data(statement_a)}")
     print(vs)
-    print(format_data(statement_b))
+    print(f"Compare B: {format_data(statement_b)}")
     guess = input("Who has more follower? Type 'A' or 'B: '").lower()
 
     is_correct = check_score(guess,statement_a,statement_b)
