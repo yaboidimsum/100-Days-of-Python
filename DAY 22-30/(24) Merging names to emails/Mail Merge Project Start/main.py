@@ -13,6 +13,7 @@ with open("./Input/Letters/starting_letter.txt") as letter_file:
         for name in list_name:
             strip_name=name.strip()
             new_letter = letter_contents.replace(PLACEHOLDER, strip_name)
+            #Dibaca dahulu sebelum direplace, kalau tidak nanti error
             with open(f"./Output/ReadyToSend/letter_for_{strip_name}.txt", mode="w") as completed_letter:
                 completed_letter.write(new_letter)
 
